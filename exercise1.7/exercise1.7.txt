@@ -1,0 +1,5 @@
+First build the Dockerfile and name it:
+sudo docker build . -t web-server
+
+Then run it with this command:
+sudo docker run web-server

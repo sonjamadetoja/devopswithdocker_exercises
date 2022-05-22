@@ -1,0 +1,5 @@
+sonja:~$ sudo docker run -d -it ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+sonja:~$ sudo docker container ls
+sonja:~$ sudo docker exec -it vibrant_newton bash
+root:/# apt-get update && apt-get install -y curl
+root:/# sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'

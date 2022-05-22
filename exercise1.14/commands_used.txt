@@ -1,0 +1,6 @@
+sudo docker build . -t frontend
+sudo docker build . -t backend
+
+sudo docker run -p 5000:5000 frontend
+
+sudo docker run -p 8080:8080 backend
