@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+    frontend:
+      build: ./example-frontend
+      ports:
+        - 5000:5000
+    backend:
+      build: ./example-backend
+      environment: 
+        - REDIS_HOST=redis-cache
+      ports:
+        - 8080:8080
+    redis-cache:
+      image: redis
+        
